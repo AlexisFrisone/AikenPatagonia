@@ -9,7 +9,7 @@
  --newbluelight: #e3f2fd;
  --newblue: #0277BD;
 
- --textNavBar:var(var(--white));
+ --textNavBar:var(--white);
  --primaryColor: var(--blue);
  --secondaryColor: var(--yellow);  /*Cambiarlo por newbluelight*/
  --contrantsPrimaryColor: var(--red);
@@ -66,7 +66,9 @@ h1,h2,h3,h4,h5 {
    
 }
 
-
+.nav-link{
+  color:var(--textNavBar) !important;
+}
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
 
     color:var(--textNavBar);
