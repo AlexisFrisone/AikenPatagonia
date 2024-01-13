@@ -1,13 +1,15 @@
 :root{
- --blue: #1178CA;
+ --blue: #1c468e;
  --red:#EA3737;
  --yellow: #fed111;
  --green: #04ec2b;
  --grey: #888888;
+ --white: #fff;
 
- --newbluelight: #81D4FA;
+ --newbluelight: #e3f2fd;
  --newblue: #0277BD;
 
+ --textNavBar:var(var(--white));
  --primaryColor: var(--blue);
  --secondaryColor: var(--yellow);  /*Cambiarlo por newbluelight*/
  --contrantsPrimaryColor: var(--red);
@@ -31,6 +33,17 @@
  --hearbeatSmallScale: 0.7;
 }
 
+.bg-primary{
+  background-color: var(--blue) !important;
+}
+
+.bg-secondary{
+  background-color: var(--newbluelight) !important;
+}
+
+.textNavbar{
+  color:var(--textNavBar);
+}
 *{
     padding: 0;
     margin: 0;
@@ -56,7 +69,7 @@ h1,h2,h3,h4,h5 {
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
 
-    color:var(--primaryColor);;
+    color:var(--textNavBar);
 }
 footer {
     background: var(--backgroundColor);
